@@ -17,8 +17,13 @@
 ; https://math.stackexchange.com/a/999985/440144
 ; O(?)
 ; val specifcies value to take log of. Places specifies how many places to be calculated to.
-
-)
+  (let ((i 0) (count 0) (expnt 1) (expt-val -1))
+    (while (< i places)
+      (setq count 0 i (1+ i) expnt 1 expt-val -1)
+      (while (< expnt val)
+	(setq expnt (* 10 expnt) expt-val (1+ expt-val)))
+      )
+    expt-val))
 
 
 (se_lg 25 5)
