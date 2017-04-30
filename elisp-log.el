@@ -10,11 +10,25 @@
             i (- i 2)))
     (setq sum (* 2.0 sum))))
 
-(defun prec_lg (val base iters)
+
+
+
+(defun se_lg (val places)
+; https://math.stackexchange.com/a/999985/440144
+; O(?)
+; val specifcies value to take log of. Places specifies how many places to be calculated to.
+
+)
+
+
+(se_lg 25 5)
+
+
+(defun lg (val base iters)
+  ; This is the main logarithm calculator
   (/ (aht_ln base iters) (aht_ln val iters)))
 
-(prec_lg 2 8 200)
-
+(lg 2 8 200)
 
 
 
