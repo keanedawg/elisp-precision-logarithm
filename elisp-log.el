@@ -13,11 +13,13 @@
 
 ; Probably will use :)
 (defun se_lg (val places)
-; https://math.stackexchange.com/a/999985/440144
+; https://math.stackexchange.com/a/999985/440144 <--- This algorithm is AMAZING
 ; O(?)
 ; val specifcies value to take log of. Places specifies how many places to be calculated to.
   (let ((i 0) (count -1) (expnt 1) (result ""))
+;    (if (< val 10.0) (setq result (concat "0." result)))
     (while (< i places)
+      (if (and (= 1 i) (> val 10.0)) (setq result (concat result ".")))
       (setq count -1 i (1+ i) expnt 1)
       (while (< expnt val)
 	(setq expnt (* 10 expnt) count (1+ count)))
@@ -25,7 +27,7 @@
   result))
 
 
-(se_lg 25 5)
+(se_lg 2 50)
 
 
 (defun lg (val base iters)
