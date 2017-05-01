@@ -10,21 +10,17 @@
             i (- i 2)))
     (setq sum (* 2.0 sum))))
 
-
-
-(fboundp 'concat)
-
 (defun se_lg (val places)
 ; https://math.stackexchange.com/a/999985/440144
 ; O(?)
 ; val specifcies value to take log of. Places specifies how many places to be calculated to.
   (let ((i 0) (count 0) (expnt 1) (expt-val -1) (result ""))
     (while (< i places)
-      (setq count 0 i (1+ i) expnt 1 expt-val -1)
+      (setq count 0 i (1+ i) expnt 1.0 expt-val -1)
       (while (< expnt val)
-	(setq expnt (* 10 expnt) expt-val (1+ expt-val)))
-      (setq result (concat result (number-to-string expt-val))))
-    result))
+	(setq expnt (* 10.0 expnt) expt-val (1+ expt-val)))
+      (setq result (concat result (number-to-string expt-val)) val (/ (float val) (float expnt)) val (expt val 10)))
+  val))
 
 
 (se_lg 25 5)
