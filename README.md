@@ -4,5 +4,3 @@ This algorithm is meant to calculate the logarithm of any number up to any level
 I wrote this program because I could not find something that works like it in elisp. It is not complete yet but I intend to share it here
 
 http://stackoverflow.com/questions/43237699/elisp-more-precise-logarithm-calculation
-
-When I think it's to the point that works well enough.
