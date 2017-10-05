@@ -11,7 +11,11 @@
             i (- i 2)))
     (setq sum (* 2.0 sum))))
 
-; Probably will use :)
+
+
+
+
+;Probably will use :)
 (defun se_lg (val places)
 ; https://math.stackexchange.com/a/999985/440144 <--- This algorithm is AMAZING
 ; O(?)
