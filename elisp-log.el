@@ -15,6 +15,8 @@
 
 
 
+;se_lg stands for Stack Exchange Log. This is a really nice algorithm because in theory it can be O(n)
+;where n is equal to the var places (meaning the user specifies how much precision they would like).
 ;Probably will use :)
 (defun se_lg (val places)
 ; https://math.stackexchange.com/a/999985/440144 <--- This algorithm is AMAZING
