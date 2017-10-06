@@ -12,6 +12,7 @@
     (setq sum (* 2.0 sum))))
 
 
+
 ;se_lg stands for Stack Exchange Log. This is a really nice algorithm as it's easy to program to an exact number of digits
 ;Probably will use :)
 (defun se_lg (val places)

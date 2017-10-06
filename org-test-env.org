@@ -3,10 +3,12 @@ This is an environment that I found was easiest to quickly run my code from.
 
 
 #+BEGIN_SRC emacs-lisp
-(print "hello")
+(load-file "./elisp-log.el")
+
+(se_lg 25 20)
 #+END_SRC
 
 #+RESULTS:
-: hello
+: 1.3979400086720376090
 
 
