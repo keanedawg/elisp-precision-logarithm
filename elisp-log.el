@@ -12,11 +12,7 @@
     (setq sum (* 2.0 sum))))
 
 
-
-
-
-;se_lg stands for Stack Exchange Log. This is a really nice algorithm because in theory it can be O(n)
-;where n is equal to the var places (meaning the user specifies how much precision they would like).
+;se_lg stands for Stack Exchange Log. This is a really nice algorithm as it's easy to program to an exact number of digits
 ;Probably will use :)
 (defun se_lg (val places)
 ; https://math.stackexchange.com/a/999985/440144 <--- This algorithm is AMAZING
